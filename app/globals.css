@@ -1,0 +1,234 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* PREDEFINED FONTS */
+* {
+  font-family: 'Poppins';
+}
+
+.bg-main {
+  height: auto;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.statistics {
+  /* background: linear-gradient( to right ,  rgba(3, 3, 3, 0.22) 70% , rgba(255, 255, 255, 0));
+  opacity: 1; */
+  background: url("/assets/images/bg-rectangle.png") no-repeat;
+  display: flex !important;
+  width: 340px !important;
+}
+
+@media (min-width:1300px) {
+  .bg-main {
+    height: 1080px;
+  }
+}
+
+@media (min-width:2000px  ) {
+  .bg-main {
+    height: auto;}
+}
+
+@media (max-width:1700px) {
+  .magaa {
+    width: 444px !important;
+  }
+
+  .slider {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width:1300px) {
+  .bg-main {
+    background-position-x: -260px;
+  }
+
+  .slider {
+    padding-left: 60px;
+  }
+
+  .token {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .token-img {
+
+    width: 80%;
+  }
+}
+
+@media (max-width:768px) {
+  .magaa {
+    width: 70% !important;
+  }
+}
+
+
+@media (max-width:640px) {
+  .magaa {
+    width: 90% !important;
+  }
+
+  .statistics {
+    width: 95% !important;
+  }
+
+  .slider {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
+}
+
+
+
+.gradient-text {
+  background: linear-gradient(45deg, rgba(226, 235, 251, 1), rgba(227, 234, 249, 1), rgba(228, 233, 247, 0.23));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.token-info {
+  background: url(/assets/images/token-info.png);
+  background-repeat: no-repeat;
+  background-position-y: 43%;
+  background-position-x: 50%;
+}
+
+.radial-button-bg {
+  background: radial-gradient(#DC2750, #EE703A);
+}
+
+.radial-button-bg-time {
+  background: linear-gradient(#6CA3FF, #155FDC);
+}
+
+/* s */
+
+.parent-flex {
+  display: flex !important;
+}
+
+.hover-effect {
+  z-index: 1000000 !important;
+
+}
+
+.hover-effect:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: transform .3s ease;
+  color: rgb(177, 177, 177);
+}
+
+.group {
+  bottom: 0px;
+  /* Initial bottom value */
+  transition: transform .3s ease, bottom .3s ease;
+  /* Combined transition */
+}
+
+.group:hover {
+  bottom: 50px;
+}
+
+.img:hover+.group {
+  bottom: 50px;
+  /* Other styles */
+  transition: transform 3s ease, bottom 3s ease;
+}
+
+.cus-smoothly {
+  position: relative;
+  animation-duration: 2s;
+  animation-delay: 3s;
+  animation-name: cus-anim;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+
+@keyframes cus-anim {
+  0% {
+    width: 0%;
+    opacity: 0.6;
+  }
+
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+
+@media(max-width: 768px) {
+  .magaa {
+    top: 500px;
+  }
+
+  .troImg {
+    height: 700px;
+    position: absolute;
+    top: 175px;
+  }
+}
+
+
+
+
+@media (max-width:768px) {
+  .bg-main {
+    height: 550px;
+    margin-bottom: 150px;
+  }
+
+  .troImg {
+    height: 465px;
+    object-fit: cover;
+    object-position: left;
+    top: 32px;
+  }
+
+  .magaa {
+    top: 524px;
+  }
+}
+
+
+@media (max-width:400px) {
+  .troImg {
+    object-position: -40px 50%;
+  }
+
+}

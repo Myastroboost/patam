@@ -1,0 +1,60 @@
+.sunCon {
+  position: absolute;
+  top: -64px;
+  left: 427px;
+  z-index: 1000;
+  width: 400px;
+  height: 400px;
+}
+
+@media (max-width: 1500px) {
+  .sunCon {
+    top: -64px;
+    left: 25%;
+  }
+}
+
+@media (max-width: 1030px) {
+  .sunCon {
+    left: 15%;
+    top: -104px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .sunCon {
+    width: 40%;
+    left: 25%;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .sunCon {
+    top: -80px;
+    left: 15%;
+  }
+}
+
+@media (max-width: 660px) {
+  .sunCon {
+    top: -20px;
+    left: 28%;
+  }
+}
+
+
+@media (max-width: 520px) {
+  .sunCon {
+    top: -0px;
+    left: 36%;
+  }
+}
+
+@media (min-width:2000px  ) {
+  .sunCon {
+    top: -44px;
+    left: 550px;
+  }
+}
