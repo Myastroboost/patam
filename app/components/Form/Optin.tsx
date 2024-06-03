@@ -199,7 +199,7 @@ export default function Optin({ onSubmitSucces }: PropType) {
             >
                 <div
                     className="g-recaptcha"
-                    data-sitekey="6LdFDu8pAAAAAI-ExWNqEBqgFnTJ2lyFc2LQHTvV"
+                    data-sitekey="6Ldc9e8pAAAAAIMEIF-LKLCnIhiPA99tG8Gwry-c"
                     data-callback="verifyCaptcha"
                 ></div>
                 <div
