@@ -78,7 +78,7 @@ export default function Optin({ onSubmitSucces }: PropType) {
 
             axios
                 .post(
-                    'https://magaa.io/coc/add-contact.php',
+                    'https://patam.vercel.app/coc/add-contact.php',
                     {
                         email: hasEmailErr,
                         first_name: firstName,
